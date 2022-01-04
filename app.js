@@ -30,7 +30,7 @@ Product.belongsTo(User, {
 User.hasMany(Product) // Same above
 
 sequelize
-  .sync({ force: true })
+  .sync()
   .then(result => {
     app.listen(3000);
   })
